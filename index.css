@@ -1,0 +1,331 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    display: flex;
+    padding: 0px 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.header .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.header .logo {
+    width: 28;
+    height: 28;
+}
+
+.header .logo2 {
+    height: 22;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-bar ul a {
+    text-decoration: none;
+}
+
+.nav-bar ul li {
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    color: #f70069;
+    font-weight: 600;
+}
+
+.nav-bar ul li:active {
+    color: #de005e;
+}
+
+.nav-bar ul .login {
+    cursor: pointer;
+    border-radius: 10px;
+    background-color:#f70069;
+    color: #f0f0f0;
+    padding: 10px 30px ;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+}
+
+.nav-bar ul .login:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+    background-color: #de005e;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.restaurant-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    padding-top: 40px;
+}
+
+.restraunt-card {
+    width: 250px;
+    text-align: center;
+    padding: 10px 10px 15px 10px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    font-size: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.restraunt-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transform: scale(1.02);
+}
+
+.restraunt-card .logo2 {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.restraunt-card h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.restraunt-card p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 400;
+    font: 14px;
+}
+
+.restraunt-card p,
+.restraunt-card h2 {
+    margin: 12px 0;
+}
+
+.restraunt-card .button {
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 14px;
+    border: none;
+    background-color: #f70069;
+    color: #f0f0f0;
+    font-weight: 400;
+    padding: 10px 20px;
+}
+
+.restraunt-card .button:hover {
+    background-color: #de005e;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.search-container .searchbar {
+    width: 300px;
+    font-size: 16px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    padding: 10px 20px;
+    border: none;
+    background-color: aliceblue;
+}
+
+.search-container .search-button {
+    cursor: pointer;
+    border: none;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: rgb(196, 161, 161);
+    font-size: 16px;
+    padding: 10px 30px;
+    color: white;
+    background-color:#f70069;
+}
+
+.search-container .search-button:hover {
+    background-color: #de005e;
+}
+
+.sortbutton-container{
+    display:flex;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+.sortbutton-container .sort-button {
+    width: 180px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color:#f70069 ;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px 10px;
+}
+
+.sortbutton-container .sort-button:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+    background-color: #de005e;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.body-shimmer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    padding-top: 40px;
+}
+
+.shimmer-card {
+    width: 250px;
+    height: 400px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    border-radius: 8px;
+    margin: 10px;
+    animation: shimmer 1.5s infinite;
+}
+
+
+
+@keyframes shimmer {
+    0% {
+        background-position: -280px 0;
+    }
+    100% {
+        background-position: 280px 0;
+    }
+}
+
+.search-shimmer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.search-shimmer-container .searchbar-shimmer {
+    width: 500px;
+    font-size: medium;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 10px;
+    height: 24px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    border: none;
+    animation: shimmer 1.5s infinite;
+}
+
+.search-shimmer-container .search-button-shimmer {
+    height: 44px;
+    width: 120px;
+    cursor: pointer;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    font-size: medium;
+    border: none;
+    animation: shimmer 1.5s infinite;
+    border-left: grey solid 1px;
+}
+
+
+.button-shimmer-card {
+    width: 120px;
+    height: 44px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    border-radius: 30px;
+    margin: 10px;
+    animation: shimmer 1.5s infinite;
+    display: flex;
+    justify-content: center;
+}
+
+
+.button-shimmer-container .button-shimmer-card {
+    height: 65px;
+    width: 20%;
+    cursor: pointer;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    font-size: 18px;
+    border: none;
+    margin-top: 10px;
+    animation: shimmer 1.5s infinite;
+
+}
+
+.button-shimmer-container {
+    display: flex;
+    gap: 50px;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
