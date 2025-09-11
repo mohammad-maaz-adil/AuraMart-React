@@ -6,11 +6,11 @@ const Shimmer = () => {
                 <button className="search-button-shimmer"></button>
             </div>
 
-            <div className="button-shimmer-container">
-                <div className="button-shimmer-card"></div>
-                <div className="button-shimmer-card"></div>
-                <div className="button-shimmer-card"></div>
-                <div className="button-shimmer-card"></div>
+            <div className="sortbutton-container-shimmer">
+                <div className="sort-button-shimmer"></div>
+                <div className="sort-button-shimmer"></div>
+                <div className="sort-button-shimmer"></div>
+                <div className="sort-button-shimmer"></div>
             </div>
 
             <div className="shimmer-container">
