@@ -1,5 +1,5 @@
 {
-  "name": "foodpanda",
+  "name": "auramart",
   "version": "1.0.0",
   "description": "",
   "dependencies": {
@@ -7,7 +7,6 @@
     "base-x": "^3.0.11",
     "braces": "^3.0.3",
     "browserslist": "^4.25.2",
-    "caniuse-lite": "^1.0.30001735",
     "chalk": "^4.1.2",
     "chrome-trace-event": "^1.0.4",
     "clone": "^2.1.2",
@@ -44,7 +43,10 @@
     "postcss-value-parser": "^4.2.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-icon": "^1.0.0",
+    "react-icons": "^5.5.0",
     "react-refresh": "^0.16.0",
+    "react-router-dom": "^7.9.3",
     "regenerator-runtime": "^0.14.1",
     "safe-buffer": "^5.2.1",
     "scheduler": "^0.26.0",
@@ -58,7 +60,6 @@
     "utility-types": "^3.11.0",
     "weak-lru-cache": "^1.2.2"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "jest",
     "start": "parcel index.html",

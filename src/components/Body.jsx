@@ -2,6 +2,8 @@
 import RestrauntCard from "./RestrauntCard";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
+import useOnlineStatus from "../utils/useOnlineStatus";
+
 const Body = () => {
     const [ListofRestraunt, setListofRestraunt] = useState([]);
     const [allRestraunt, setallRestraunt] = useState([]);
@@ -33,6 +35,16 @@ const Body = () => {
         else {
             setListofRestraunt(filteredlist);
         }
+    };
+
+    const onlineStatus = useOnlineStatus();
+
+    if(onlineStatus === false) {
+        return(
+            <div>
+                <h1>Offline, Please check your internet connection</h1>
+            </div>
+        )
     };
     
     return ListofRestraunt.length === 0 ? <Shimmer /> : (

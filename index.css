@@ -9,7 +9,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0px 50px;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+     background-color: #120B2B;
 }
 
 .header .logo-container {
@@ -20,12 +21,8 @@ body {
 }
 
 .header .logo {
-    width: 28;
-    height: 28;
-}
-
-.header .logo2 {
-    height: 22;
+    width: 200px;
+    height: 50;
 }
 
 .nav-bar ul {
@@ -35,26 +32,26 @@ body {
     list-style-type: none;
 }
 
-.nav-bar ul a {
-    text-decoration: none;
-}
-
 .nav-bar ul li {
     text-align: center;
     font-size: 16px;
     cursor: pointer;
-    color: #f70069;
     font-weight: 600;
 }
 
-.nav-bar ul li:active {
-    color: #de005e;
+.nav-bar ul li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nav-bar ul li a:hover {
+    color: #7A62FF;
 }
 
 .nav-bar ul .login {
     cursor: pointer;
-    background-color:#f70069;
-    color: #f0f0f0;
+    background-color:#7A62FF;
+    color: aliceblue;
     padding: 10px 30px ;
     font-size: 16px;
     font-weight: 600;
@@ -63,7 +60,7 @@ body {
 }
 
 .nav-bar ul .login:hover {
-    background-color: #de005e;
+    background-color: #6E58EA;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     transform: scale(1.05);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -75,6 +72,7 @@ body {
     justify-content: center;
     align-items: center;
     padding-bottom: 50px;
+    background: linear-gradient(210deg,#020617 0%,#140c2b 5%,#0a072e 60%,#2a0e78 100%);
 }
 
 .restaurant-container {
@@ -93,7 +91,7 @@ body {
     padding: 10px 10px 15px 10px;
     border-radius: 10px;
     font-size: 16px;
-    background-color: aliceblue;
+    background-color: rgb(195, 224, 249);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -133,14 +131,16 @@ body {
     border-radius: 10px;
     font-size: 14px;
     border: none;
-    background-color: #f70069;
-    color: #f0f0f0;
-    font-weight: 400;
+    /* background-color: #f70069; */
+    background-color:#7A62FF;
+    color: #ffffff;
+    font-weight: 600;
     padding: 10px 20px;
 }
 
 .restraunt-card .button:hover {
-    background-color: #de005e;
+    /* background-color: #de005e; */
+    background-color: #6E58EA;
 }
 
 .search-container {
@@ -156,7 +156,13 @@ body {
     border-top-left-radius: 30px;
     padding: 10px 20px;
     border: none;
+    color: #120B2B;
     background-color: aliceblue;
+}
+
+.search-container .searchbar::placeholder {
+    color: #140c2b;
+    font-weight: 600;
 }
 
 .search-container .search-button {
@@ -165,13 +171,16 @@ body {
     border-bottom-right-radius: 30px;
     border-top-right-radius: 30px;
     font-size: 16px;
+    font-weight: 600;
     padding: 10px 30px;
     color: white;
-    background-color:#f70069;
+    /* background-color:#f70069; */
+    background-color:#7A62FF;
 }
 
 .search-container .search-button:hover {
-    background-color: #de005e;
+    /* background-color: #de005e; */
+    background-color: #6E58EA;
 }
 
 .sortbutton-container{
@@ -182,17 +191,21 @@ body {
 
 .sortbutton-container .sort-button {
     width: 180px;
-    background-color:#f70069 ;
+    /* background-color:#f70069 ; */
+    background-color:#7A62FF;
+    
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    font-weight: 600;
     padding: 10px;
 }
 
 .sortbutton-container .sort-button:hover {
-    background-color: #de005e;
+    /* background-color: #de005e; */
+    background-color: #6E58EA;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     transform: scale(1.05);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -205,6 +218,7 @@ body {
     justify-content: center;
     align-items: center;
     padding-bottom: 50px;
+    background-color: #120B2B;
 }
 
 .shimmer-container {
@@ -221,7 +235,7 @@ body {
     width: 260px;
     height: 400px;
     border-radius: 10px;
-    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background: linear-gradient(90deg, rgb(195, 224, 249) 25%, rgb(203, 221, 238) 50%, rgb(195, 224, 249) 75%);
     animation: shimmer 1.5s infinite;
 }
 
@@ -249,7 +263,7 @@ body {
     border-bottom-right-radius: 30px;
     border-top-right-radius: 30px;
     border: none;
-    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background: linear-gradient(90deg, rgb(195, 224, 249) 25%, rgb(203, 221, 238) 50%, rgb(195, 224, 249) 75%);
     animation: shimmer 1.5s infinite;
 }
 
@@ -263,7 +277,7 @@ body {
     width: 180px;
     height: 40px;
     border-radius: 10px;
-    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background: linear-gradient(90deg, rgb(195, 224, 249) 25%, rgb(203, 221, 238) 50%, rgb(195, 224, 249) 75%);
     animation: shimmer 1.5s infinite;
 }
 

@@ -1,0 +1,182 @@
+/* --- About Page Layout --- */
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background: #f9fafc; */
+  background: linear-gradient(200deg,#020617 0%,#140c2b 5%,#0a072e 60%,#2a0e78 100%);
+  color: #fff;
+  padding: 20px 0;
+  padding-bottom: 100px;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* --- Page Heading --- */
+.about-page h1 {
+  text-align: center;
+  font-style: italic;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+/* --- Users Container --- */
+.users-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 75vw;
+}
+
+/* --- Individual User Card --- */
+.user-card {
+  max-width: 250px;
+  /* background: #7A62FF; */
+  background-color: rgb(195, 224, 249);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.user-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.user-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.user-card h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 8px;
+  font-style: normal;
+  padding: 0;
+}
+
+.user-card h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 12px;
+}
+
+.user-card p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  line-height: 1.4;
+  margin-bottom: 20px ;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+  .users-container {
+    flex-direction: column;
+    align-items: center;
+    width: 90vw; /* more flexible on small screens */
+  }
+
+  .user-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+
+
+
+
+/* --- Shimmer Users Container --- */
+.users-container-shimmer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 75vw;
+}
+
+/* --- Shimmer Card --- */
+.user-card-shimmer {
+  width: 19vw;
+  height: 380px;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(90deg, rgb(195, 224, 249) 25%, rgb(203, 221, 238) 50%, rgb(195, 224, 249) 75%);
+  animation: shimmer 1.5s infinite;
+  text-align: center;
+}
+
+/* shimmer effect */
+.user-card-shimmer img,
+.user-card-shimmer h1,
+.user-card-shimmer h2,
+.user-card-shimmer p,
+.user-card-shimmer div {
+  background: linear-gradient(90deg,#eeeeee 25%,#dddddd 50%,#eeeeee 75%);
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+}
+
+/* image placeholder */
+.user-card-shimmer img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+/* name placeholder */
+.user-card-shimmer h1 {
+  height: 20px;
+  width: 70%;
+  margin: 10px auto;
+}
+
+/* role placeholder */
+.user-card-shimmer h2 {
+  height: 16px;
+  width: 60%;
+  margin: 10px auto;
+}
+
+/* description placeholder */
+.user-card-shimmer p {
+  height: 14px;
+  width: 85%;
+  margin: 8px auto;
+}
+
+/* button / extra placeholder */
+.user-card-shimmer div {
+  height: 30px;
+  width: 60%;
+  margin: 15px auto 0;
+  border-radius: 10px;
+}
+
+/* --- Shimmer Animation --- */
+@keyframes shimmer {
+  0% {
+    background-position: -280px 0;
+  }
+  100% {
+    background-position: 280px 0;
+  }
+}

@@ -1,4 +1,5 @@
 import { CDN_URL } from "../utils/constants";
+import { Link } from "react-router";
 
 const RestrauntCard = (prop) => {
   const { resdata } = prop;
@@ -11,7 +12,7 @@ const RestrauntCard = (prop) => {
       <p>Rating: {resdata.info.avgRating} stars</p>
       <p>Cost: {resdata.info.costForTwo}</p>
       
-      <a href={resdata.cta.link}><button className="button">Order Now</button></a>
+      <Link to = {"/restaurant/" + resdata.info.id}><button className="button">Order Now</button></Link>
     </div>
   );
 };
