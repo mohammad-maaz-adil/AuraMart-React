@@ -16,7 +16,7 @@ AuraMart is a modern, responsive food delivery and restaurant discovery web appl
 - **Frontend:** React 18
 - **Build Tool/Bundler:** Vite
 - **Routing:** React Router DOM
-- **Styling:** Vanilla CSS3
+- **Styling:** CSS3
 
 ## 🚀 Getting Started
 
